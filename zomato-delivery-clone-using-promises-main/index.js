@@ -58,7 +58,7 @@ function checkIfOrderAcceptedFromRestaurant() {
             if (!hasRestaurantSeenYourOrder) return;
 
             if (isOrderAccepted) resolve(true);
-            else resolve(false);
+            else reject(false);
 
             clearInterval(restaurantTimer);
         },2000);
